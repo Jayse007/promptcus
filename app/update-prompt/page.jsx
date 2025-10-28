@@ -61,7 +61,7 @@ const EditPrompt = () => {
     };
 
     return (
-        <Suspense fallback= {Home}>
+        <Suspense fallback= {<div>Loading...</div>}>
         <Form
             type = "Edit"
             post = {post}
