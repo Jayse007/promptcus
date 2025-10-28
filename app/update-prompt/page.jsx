@@ -60,7 +60,7 @@ const EditPrompt = () => {
     };
 
     return (
-        <Suspense>
+        <Suspense fallback={searchParams}>
         <Form
             type = "Edit"
             post = {post}
