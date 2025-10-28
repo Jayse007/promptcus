@@ -4,6 +4,7 @@ import {useState, useEffect, Suspense} from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 
 import Form from '@components/Form';
+import  Home from '@app/page';
 
 const EditPrompt = () => {
     const router = useRouter();
@@ -60,7 +61,7 @@ const EditPrompt = () => {
     };
 
     return (
-        <Suspense fallback={searchParams}>
+        <Suspense fallback= {Home}>
         <Form
             type = "Edit"
             post = {post}
